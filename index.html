@@ -19,21 +19,7 @@
 <body>
 
 
-  <header id="header" class="header justify-content-between">
-
-  </header>
-  <main></main>
-
-
-  <section class=" about py-5" id="about">
-
-  </section>
-
-  <section="produtos">
-
-    </section>
-
-
+  <header id="header" class="header">
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
@@ -50,26 +36,33 @@
 
         <!--Botoes do Menu-->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-alto">
+          <ul class="navbar-nav ms-auto">
+            
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="#">Produtos</a>
+              <a class="nav-link" href="#profutos">Produtos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
+            
           </ul>
         </div>
       </div>
     </nav>
 
+
+  </header>
+  
+
+  
+
     <!-- SOBRE NÓS -->
-    <section class="about py-5 bg-light" id="about">
+    <section class="sobre py-5 bg-light" id="sobre">
 
 
 
@@ -77,12 +70,13 @@
         <div class="row align-items-center">
 
           <!-- IMAGEM -->
-          <div class="col-lg-5 coluna text-center mb-4 mb-lg-0">
+          <div class="col-lg-5 text-center mb-4 md-lg-0">
             <img src="img/sobre.png"
               alt="Mulher aplicando creme facial com expressão calma, representando o autocuidado e a leveza da marca Calm Skin."
               loading="lazy" class="img-fluid rounded-4 shadow">
+
           </div>
-          <i class="bi bi-airplane-fill"></i>
+          
 
           <!-- TEXTO -->
           <div class="col-lg-7 coluna">
@@ -133,51 +127,132 @@
 
 
     <!--estatisticas-->
-    <section class="stats">
+    <section class="stats" id="stats">
+    </section>
+
+    <section class="produtos" id="produtos">
+
       <div class="container">
 
+        <!--titulo ou subtitulo-->
+        <h2 class="badge rounded-pill text-bg-info">Produtos</h2>
 
-        <div class="stats-item">
-
-        
-
-        <!--icone-->
-        <i class="bi bi-airplane-engines-fil"></i>
-
-        <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"    class="purecounter"></span>
+        <div>
+          <span></span>
+          <span class=" text-primary">Conheça nossos produtos</span>
+        </div>
 
 
-        <p>
-          <strong>produtos</strong>
-        </p>
 
-        <span>internacional</span>
+      </div> <!--fim titulo-->
+      <div class="container">
 
-
+      </div>
 
         <div class="row">
 
-          <div class="col-lg-3">
-            conteudo teste 1
+          <!--coluna 1-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+
+            <div class="flex-shirnk-0">
+              <i class="bi bi-briefcase"></i>
+
+              <h4>Produtos ideais de acordo com sua pele</h4>
+              <p>escolha o produto</p>
+
+              <a href="a" class="stretched-link">
+
+                <span>Leia mais</span>
+
+              </a>
+
+              
+
+
+              
+            </div>
 
           </div>
 
-          <div class="col-lg-3">
-            conteudo teste 2
+          </div>
+
+          <!--coluna 2-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
 
           </div>
 
-          <div class="col-lg-3">
-            conteudo teste 3
+          
+          <!--coluna 3-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+
+          </div>
+
+          </div>
+          <!--coluna 4-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+
+          </div>
+          <!--coluna 5-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
+
+          </div>
+          <!--coluna 6-->
+
+          <div class="col-lg-4 col-md-6 d-flex">
 
           </div>
 
         </div>
-        teste
+
 
       </div>
 
     </section>
+  <div class="container">
+
+    <div class="row gy-4 text-center">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-flower1"></i>
+          <span data-purecounter-start="0" data-purecounter-end="255" data-purecounter-duration="2" class="purecounter"></span>
+          <p><strong>Produtos</strong> <span>Nacionais</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-heart-fill"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="2" class="purecounter"></span>
+          <p><strong>Clientes</strong> <span>Satisfeitos</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-droplet-fill"></i>
+          <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+          <p><strong>Fórmulas</strong> <span>Ativas</span></p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-globe2"></i>
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2" class="purecounter"></span>
+          <p><strong>Países</strong> <span>Alcançados</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Bootstrap JS (opcional, só se for usar componentes JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
