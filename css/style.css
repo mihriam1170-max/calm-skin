@@ -1,0 +1,176 @@
+
+/* Hero */
+.hero {
+  padding: 0;
+}
+
+.hero .carousel {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  background-color: #00000060;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .carousel-container {
+  position: absolute;
+  inset: 90px 64px 64px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin-bottom: 3rem;
+  color: #e2e2e2;
+  font-size: 3rem;
+  font-weight: 700;
+  animation: fadeInDown 1s both;
+}
+
+.hero p {
+  color: #e2e2e2;
+  max-width: 60%;
+}
+
+
+/* Aula hj 19/11 */
+
+
+
+/* Ajuste do icone */
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.hero .carousel-indicators {
+  list-style: none;
+}
+
+.hero .carousel-indicators li {
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #08aaeb !important; /* cor do indicador ativo */
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* Call to Action */
+
+.cta {
+  padding: 7.25rem 0;
+  position: relative;
+  clip-path: inset(0);
+  /* Recorte */
+}
+
+.cta img {
+  display: block;
+  position: fixed;
+  /* Posição */
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* largura */
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Filtro Antes da Foto */
+.cta::before {
+  content: "";
+  background: #3a3a3a79;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.cta .cta-btn {
+  font-size: 1.4rem;
+  color: azure;
+  /* background: green; */
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: .5rem;
+  transition: .5s;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border: 2px solid azure;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  /* Ajuste o valor conforme necessário */
+}
+
+.cta .cta-btn:hover {
+  /* filter: brightness(80%); */
+  background: green;
+  border: none;
+  /*   box-shadow: 1px 1px 15px 5px #0000003d; */
+}
