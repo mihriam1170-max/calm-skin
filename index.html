@@ -56,6 +56,10 @@
               <a class="nav-link" href="#produtos">Produtos</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -332,7 +336,7 @@
           <i class="bi bi-flower1"></i>
           <span data-purecounter-start="0" data-purecounter-end="587" data-purecounter-duration="2"
             class="purecounter"></span>
-          <p><strong>Produtos</strong> <span>Diversos</span></p>
+          <p><strong>Produtos</strong> <span>Indicados</span></p>
         </div>
       </div>
 
@@ -341,7 +345,7 @@
           <i class="bi bi-heart-fill"></i>
           <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="2"
             class="purecounter"></span>
-          <p><strong>Clientes</strong> <span>Satisfeitos</span></p>
+          <p><strong>Usuários</strong> <span>Satisfeitos</span></p>
         </div>
       </div>
 
@@ -357,7 +361,7 @@
       <div class="col-lg-3 col-md-6">
         <div class="stats-item">
           <i class="bi bi-globe2"></i>
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2"
+          <span data-purecounter-start="0" data-purecounter-end="223" data-purecounter-duration="2"
             class="purecounter"></span>
           <p><strong>Recomendações</strong> <span>Internacionais</span></p>
         </div>
@@ -399,36 +403,36 @@
             <h2 class="badge rounded-pill text-bg-info">Variedades</h2>
 
             <div class="fs-3">
-                <span>Conheça Nossos</span>
+                <span>Conheça os</span>
                 <span class="text-primary fw-bold">Produtos</span>
             </div>
         </div>
 
         <!-- Estrutura da Galeria -->
-        <div class="">
+        <div class="container-fluid">
 
             <!-- ISOTOPE // Mansory -->
 
             <!-- Filtro -->
-            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry">
+            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry" data-sort="original-order">
 
                 <!-- Botoes do Filtro -->
                 <ul class="portfolio-filters isotope-filters">
 
                     <!-- Todos ou o Reset / Limpar a Selecao -->
                      <li data-filter="*" class="filter-active">Todas as peles</li>
-                     <li data-filter="">Pele Oleosa & Acneica</li>
-                     <li data-filter="">Pele Seca</li>
-                     <li data-filter="">Pele Sensível</li>
-                     <li data-filter="">Pele Mista & Normal</li>
+                     <li data-filter=".filter-acne">Oleosa e Acneica</li>
+                     <li data-filter=".filter-seca">Pele Seca</li>
+                     <li data-filter=".filter-psen">Pele Sensível</li>
+                     <li data-filter=".filter-normal">Mista e Normal</li>
   
                 </ul>
 
                 <!-- Galeria na Horizontal -->
-                <div class="row g-0 isotope-container">
+                <div class="row g-0 isotope-container masonry-grid">
 
                     <!-- Fotos 1 Colunas Bootstrap -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-acne">
 
                       <div class="portfolio-content">
                         <img src="img/Portfolio/foto 1.jpg" alt="" class="img-fluid">
@@ -445,34 +449,196 @@
                         </div>
 
                       </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 5.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 5.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 6.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 6.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
                         
 
                     </div>
 
                     <!-- Foto 2 -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 ">
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-seca">
 
                       <div class="portfolio-content">
-                        <img src="" alt="">
+                        <img src="img/Portfolio/foto 2.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 2.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 7.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 7.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 8.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 8.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
 
                       </div>
                         
                     </div>
 
                     <!-- Foto 3 -->
-                     <div class="col-xl-3 col-lg-4 col-md-6 ">
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-psen">
 
                         <div class="portfolio-content">
-                        <img src="" alt="">
+                        <img src="img/Portfolio/foto 3.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 3.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
 
                       </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 9.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 9.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 10.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 10.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
                     </div>
 
                     <!-- Foto 4 -->
-                     <div class="col-xl-3 col-lg-4 col-md-6 ">
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-normal">
 
                         <div class="portfolio-content">
-                        <img src="" alt="">
+                        <img src="img/Portfolio/foto 4.jpg" alt="" class="img-fluid">
+
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 4.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto 11.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 11.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                      <div class="portfolio-content">
+                        <img src="img/Portfolio/foto12.jpg" alt="" class="img-fluid">
+                        
+                        <div class="portfolio-info">
+
+                          <!-- link foto-->
+
+                          <a href="img/Portfolio/foto 12.jpg" class="glightbox preview-link">
+                             <i class="bi bi-zoom-in"></i>
+
+                          </a>
+
+                        </div>
 
                       </div>
                     </div>                    
@@ -487,32 +653,75 @@
 
 
 
-    <!-- Isotope -->
+    <!-- Isotope Filtro-->
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
-   <!--g lightbox JS-->
+   <!--g lightbox JS// Galeria// Animação fade-in-->
 
    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
-   <!--AOS CSS-->
+   <!--AOS JS Animação-->
 
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <!-- Bootstrap JS -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-   <!--Contador status-->
+   <!-- Pure Counter Contador status-->
    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
-  
+   <!--Masory CDN  -->
+
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+   <!-- Images CDN -->
+
+   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+
+
+    <!--JavaScript-->
+
   <script>
-     
+
+    //inician puerecounter
+    
      new PureCounter();
+
+     //iniciar AOS
      AOS.init(
       {duration:1200}
      );
+
+     // Galeria--- G LightBox
      const lightbox = GLightbox();
+
+     // Masonry Grid
+
+     document.addEventListener('DOMContentLoaded', function() { 
+
+       // Constante= fixo
+       
+         const grid = document.querySelector('.masonry-grid');
+
+        
+         imagesLoaded(grid, function () {
+            new Masonry(grid, {
+              itemSelector: '.portfolio-item' ,
+              percentPosition: true,
+              horizontalOrder: true,
+              gutter: 0
+            });
+         });
+
+     });
+
+     
+
+
+
 
   </script>
 
