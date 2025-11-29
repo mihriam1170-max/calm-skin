@@ -62,23 +62,47 @@
   color: #e2e2e2;
   max-width: 60%;
 }
-
-
-/* Aula hj 19/11 */
-
-
-
-/* Ajuste do icone */
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
+/* Icones setas Trocam slides */
+.hero .carousel-control-prev
+.hero .carousel-control-next {
   background: none;
   font-size: 2rem;
-  line-height: 1;
+  line-height: 0;
+  width: 10%;
+  transition: 0.3s;
+  opacity: 0.3;
 }
 
-.hero .carousel-indicators {
-  list-style: none;
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-prev:hover{
+  opacity: 0.9;
+  color: aqua;
+  transition: 0.35;
+  border: none;
 }
+
+.hero.carousel-prev-focus,
+.hero.carousel-next-focus{
+  opacity: 0.5;
+  line-height: 0;
+
+}
+
+.carousel-indicators .active{
+background-color: #08aaeb;
+
+}
+
+/* call to action */
+.cta{
+  padding: 7.25rem 0;
+  position: relative;
+  clip-path: inset(0);
+
+
+}
+ 
+
 
 .hero .carousel-indicators li {
   cursor: pointer;
@@ -87,6 +111,7 @@
 .carousel-indicators .active {
     background-color: #08aaeb !important; /* cor do indicador ativo */
 }
+/*filtros */
 
 
 @keyframes fadeInUp {
@@ -173,4 +198,27 @@
   background: green;
   border: none;
   /*   box-shadow: 1px 1px 15px 5px #0000003d; */
+}
+/* filtros */
+
+/* UL */
+.portfolio-filters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+/* todas as li's */
+.portfolio-filters li{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  background: #f2f4f5;
+  color: #1d1e1f;
+  border-radius: o.2rem;
+  justify-items: center;
+
 }
