@@ -114,6 +114,8 @@ background-color: #08aaeb;
 /*filtros */
 
 
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -204,12 +206,12 @@ background-color: #08aaeb;
 /* UL */
 .portfolio-filters {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 2.5rem 0;
+   margin: 10px auto 20px auto;
+   text-align: center;
+   
+ 
 }
+
 /* todas as li's */
 .portfolio-filters li{
   cursor: pointer;
@@ -222,3 +224,22 @@ background-color: #08aaeb;
   justify-items: center;
 
 }
+
+.portfolio-filters li:hover ,
+.portfolio-filters li.filter-active {
+  filter: brightness(85%);
+  background:#76c6e6 ;
+  color: #f7f7f7;;
+}
+
+/* O site em telas até 575px */
+@media (max-width: 575px){
+  .portfolio-filters li {
+    font-size: 1rem;
+
+  }
+
+
+}
+
+
