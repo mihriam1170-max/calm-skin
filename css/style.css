@@ -1,4 +1,15 @@
 
+
+/* menu */
+.nav-link{
+  color: rgb(53, 168, 245);
+}
+
+.nav-limk:hover{
+  color: #111111;
+}
+
+
 /* Hero */
 .hero {
   padding: 0;
@@ -52,7 +63,7 @@
 
 .hero h2 {
   margin-bottom: 3rem;
-  color: #e2e2e2;
+  color: #f3d7d7;
   font-size: 3rem;
   font-weight: 700;
   animation: fadeInDown 1s both;
@@ -76,7 +87,7 @@
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-prev:hover{
   opacity: 0.9;
-  color: aqua;
+  color: rgb(112, 196, 230);
   transition: 0.35;
   border: none;
 }
@@ -89,7 +100,7 @@
 }
 
 .carousel-indicators .active{
-background-color: #08aaeb;
+background-color: #84bebe;
 
 }
 
@@ -150,7 +161,7 @@ background-color: #08aaeb;
 
 .cta .cta-btn {
   font-size: 1.4rem;
-  color: azure;
+  color: rgb(223, 231, 231);
   /* background: green; */
   text-decoration: none;
   padding: 0.8rem 2.5rem;
@@ -158,7 +169,7 @@ background-color: #08aaeb;
   transition: .5s;
   letter-spacing: 1px;
   font-weight: 400;
-  border: 2px solid azure;
+  border: 2px solid rgb(224, 241, 241);
 }
 
 .cta-btn {
@@ -168,7 +179,7 @@ background-color: #08aaeb;
 
 .cta .cta-btn:hover {
   /* filter: brightness(80%); */
-  background: green;
+  background: rgb(48, 128, 48);
   border: none;
   /*   box-shadow: 1px 1px 15px 5px #0000003d; */
 }

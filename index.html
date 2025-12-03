@@ -221,10 +221,8 @@
             </li>
           </ul>
 
-          <!-- BOTÃO -->
-          <a href="#produtos" class="btn btn-primary rounded-pill px-4 mt-3">
-            Descubra produtos ideais para você
-          </a>
+          
+          
         </div>
 
       </div>
@@ -628,8 +626,32 @@
     </section>
 
     <section class="contato" id="contato">
+      <div class="container text-center" data-aos="">
+        <h2 class="badge rounded-pill text-bg-info">Contato</h2>
+
+        <div class="fs-3">
+          <span>Precisa de ajuda?</span>
+          <span>Entre em contato conosco.</span>
+
+        </div>
+      </div>
+
       <div class="container">
-        <h2>Contato</h2>
+       
+        <div class="row">
+
+          <!-- coluna esquerda dados -->
+          <div class="col-lg-6">
+             coluna dados
+          </div>
+
+          <!--formulario direito  -->
+          <div class="col-lg-6">
+           coluna formulario
+          </div>
+
+        </div>
+
       </div>
 
     </section>
@@ -732,6 +754,12 @@
        
 
      });
+
+     //Ativar o menu ao clicar na seção
+     new bootstrap.ScrollSpy(document.body, {
+      target: '#navbarNav' ,
+     });
+
 
      
 
