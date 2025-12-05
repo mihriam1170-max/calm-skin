@@ -57,6 +57,10 @@
             </li>
 
             <li class="nav-item">
+              <a class="nav-link" href="#variedades">Variedades</a>
+            </li>
+
+            <li class="nav-item">
               <a class="nav-link" href="#contato">Contato</a>
             </li>
 
@@ -394,7 +398,7 @@
 
   </section>
 
-  <section class="destinos pt-5 mb-5" id="destinos">
+  <section class="variedades pt-5 mb-5" id="variedades">
 
     <!-- Titulo da Seção -->
     <div class="container text-center">
@@ -626,7 +630,7 @@
 
   </section>
 
-  <section class="contato" id="contato">
+  <section class="contato pt-5" id="contato">
     <div class="container text-center" data-aos="">
       <h2 class="badge rounded-pill text-bg-info">Contato</h2>
 
@@ -646,15 +650,23 @@
 
           <div class="row gy-4">
 
-            <!-- QUADRADO 1 -->
+            <!-- QUADRADO 1 Endereço da empresa -->
             <div class="col-md-6">
-              INFO1
+              <div class="info-item">
+               <i class="bi bi-geo-alt"></i>
+               <h3>Endereço</h3>
+
+              </div>
             </div>
-            <!-- QUADRADO 2 -->
+            <!-- QUADRADO 2 Telefone -->
             <div class="col-md-6">
-              INFO 2
+              <div class="info-item">
+               <i class="bi bi-whatsapp"></i>
+               <h3>WhatsApp</h3>
+
+              </div>
             </div>
-            <!-- QUADRADO 3 -->
+            <!-- QUADRADO Horário de Atendimento -->
             <div class="col-md-6">
               INFO 3
             </div>
@@ -668,32 +680,44 @@
 
         <!--formulario direito  -->
         <div class="col-lg-6">
-          <form action="" method="post">
+          <form action="https://formspree.io/f/xkgdzbwq" method="post" class="form-contato">
 
             <div class="row gy-4">
 
               <!-- CAMPO NOME -->
               <div class="col-md-6">
-                <label for="nome">Nome Completa</label>
+                <label for="nome">Nome Completa*</label>
                 <input type="text" name="nome" id="nome" required>
               </div>
 
               <!-- CAMPO EMAIL -->
               <div class="col-md-6">
-                <label for="email">Email</label>
+                <label for="email">Email*</label>
                 <input type="email" name="email" id="email" required>
               </div>
 
               <!-- CAMPO TELEFONE/ WHATSAPP  -->
               <div class="col-md-6">
-                <label for="tel">WhastApp</label>
-                <input type="tel" name="telefone" id="telefone">
+                <label for="tel">WhatsApp*</label>
+                <input type="tel" name="telefone" id="telefone" required>
               </div>
 
              <!-- CAMPO ASSUNTO -->
               <div class="col-md-6">
-                <label for="assunto">Assunto</label>
-                <input type="assunto" name="assunto" id="assunto">
+                <label for="assunto">Assunto*</label>
+                <input type="text" name="assunto" id="assunto" required>
+              </div>
+             <!-- CAMPO DE MENSAGEM -->
+              <div class="col-12">
+                <textarea name="mensagem" id="mensagem" rows="6" required></textarea>
+
+              </div>
+
+              <!-- BOTÃO ENVIAR -->
+              <div class="col-12 text-center">
+                <button type="submit">
+                  Enviar
+                </button>
               </div>
 
 
@@ -812,6 +836,60 @@
     new bootstrap.ScrollSpy(document.body, {
       target: '#navbarNav',
     });
+
+      // Máscara do telefone
+    const telefoneInput = document.getElementById("telefone");
+
+    if (telefoneInput) {
+        telefoneInput.addEventListener("input", (e) => {
+            let input = e.target.value.replace(/\D/g, "");
+            if (input.length > 11) input = input.slice(0, 11);
+
+            let formatted = "";
+            if (input.length > 0) formatted += "(" + input.slice(0, 2);
+            if (input.length >= 3) formatted += ") " + input.slice(2, 7);
+            if (input.length >= 8) formatted += "-" + input.slice(7, 11);
+
+            e.target.value = formatted;
+        });
+    }
+
+    // Validação e envio do formulário com limpeza
+    const form = document.querySelector(".form-contato");
+
+    if (form) {
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault(); // Impede a atualização da página
+
+            const telefoneValor = telefoneInput?.value.replace(/\D/g, "");
+            if (!telefoneValor || telefoneValor.length !== 11) {
+                alert("Por favor, insira um telefone válido com 11 dígitos.");
+                telefoneInput?.focus();
+                return;
+            }
+
+            const formData = new FormData(form);
+            const action = form.getAttribute("action");
+
+            try {
+                const response = await fetch(action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (response.ok) {
+                    alert("Mensagem enviada com sucesso!");
+                    form.reset();
+                } else {
+                    alert("Erro ao enviar a mensagem. Tente novamente.");
+                }
+
+            } catch (error) {
+                alert("Erro de conexão. Verifique sua internet.");
+            }
+        });
+    }
 
 
 
