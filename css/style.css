@@ -2,11 +2,11 @@
 
 /* menu */
 .nav-link{
-  color: rgb(62, 165, 114);
+  color: rgb(97, 150, 215);
 }
 
-.nav-limk:hover{
-  color: #111111;
+.nav-link:hover{
+  color: #0606e8;
 }
 
 
@@ -63,7 +63,7 @@
 
 .hero h2 {
   margin-bottom: 3rem;
-  color: #f3d7d7;
+  color: #fcfafa;
   font-size: 3rem;
   font-weight: 700;
   animation: fadeInDown 1s both;
@@ -87,7 +87,7 @@
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-prev:hover{
   opacity: 0.9;
-  color: rgb(112, 196, 230);
+  color: rgb(85, 229, 229);
   transition: 0.35;
   border: none;
 }
@@ -100,7 +100,7 @@
 }
 
 .carousel-indicators .active{
-background-color: #84bebe;
+background-color: #121313;
 
 }
 
@@ -125,7 +125,7 @@ background-color: #84bebe;
 
 /* Horário de Atendimento */
 .info-item .bi-clock {
-  color: #ff9f43; /* laranja */
+  color: #0d0d0d; /* laranja */
 }
 
 /* Sobre o Site */
@@ -167,6 +167,28 @@ background-color: #84bebe;
   color: #1d8cbc; /* azul mais escuro ao focar */
 }
 
+/* Espaçamento do botão ENVIAR */
+.form-contato button {
+  margin-top: 20px;   /* espaço acima */
+  margin-bottom: 10px;
+}
+
+/* Ajuste geral para colar melhor no layout */
+.contato .container {
+  margin-bottom: 20px;
+}
+
+/* Melhor espaçamento entre os blocos da coluna esquerda */
+.info-item {
+  padding: 20px;
+}
+
+/* Opcional – deixa o form visualmente mais equilibrado no PC */
+@media (min-width: 992px) {
+  .form-contato {
+    margin-left: 20px;
+  }
+}
 
 
  
