@@ -112,6 +112,63 @@ background-color: #84bebe;
 
 
 }
+
+/* Endereço */
+.info-item .bi-geo-alt {
+  color: #4ca1af; /* azul turquesa */
+}
+
+/* WhatsApp */
+.info-item .bi-whatsapp {
+  color: #25D366; /* verde WhatsApp */
+}
+
+/* Horário de Atendimento */
+.info-item .bi-clock {
+  color: #ff9f43; /* laranja */
+}
+
+/* Sobre o Site */
+.info-item .bi-info-circle {
+  color: #1e90ff; /* azul mais escuro */
+}
+
+/* Opcional: aumentar tamanho e adicionar transição */
+.info-item i {
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+
+
+/* Formulário de Contato */
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-contato label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Todos os ícones dentro do input-group ficam azul turquesa */
+.input-group-text i {
+  color: #4ca1af; /* ou qualquer tom de azul que você queira */
+  transition: color 0.3s;
+}
+
+/* Ícone muda de tom quando o input está em foco */
+.input-group:focus-within .input-group-text i {
+  color: #1d8cbc; /* azul mais escuro ao focar */
+}
+
+
+
  
 
 
@@ -260,5 +317,7 @@ background-color: #84bebe;
 .portfolio-content img{
   transition: 0.3s;
 }
+
+
 
 
