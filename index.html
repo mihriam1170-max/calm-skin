@@ -18,11 +18,12 @@
   <!--AOS CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-
-
-
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -646,86 +647,116 @@
       <div class="row">
 
         <!-- coluna esquerda dados -->
-        <div class="col-lg-6">
 
+        <div class="col-md-6">
           <div class="row gy-4">
 
-            <!-- QUADRADO 1 Endereço da empresa -->
+            <!-- Endereço -->
             <div class="col-md-6">
-              <div class="info-item">
-               <i class="bi bi-geo-alt"></i>
-               <h3>Endereço</h3>
-
+              <div class="info-item p-3 text-center shadow-sm rounded">
+                <i class="bi bi-geo-alt"></i>
+                <h3 class="mt-2">Endereço</h3>
+                <p>100% online — sem atendimento presencial</p>
               </div>
             </div>
-            <!-- QUADRADO 2 Telefone -->
-            <div class="col-md-6">
-              <div class="info-item">
-               <i class="bi bi-whatsapp"></i>
-               <h3>WhatsApp</h3>
 
+            <!-- WhatsApp -->
+            <div class="col-md-6">
+              <div class="info-item p-3 text-center shadow-sm rounded">
+                <i class="bi bi-whatsapp"></i>
+                <h3 class="mt-2">WhatsApp</h3>
+                <p>(00) 00000-0000<br><small>*Para dúvidas gerais*</small></p>
               </div>
             </div>
-            <!-- QUADRADO Horário de Atendimento -->
+
+            <!-- Horário de Atendimento -->
             <div class="col-md-6">
-              INFO 3
+              <div class="info-item p-3 text-center shadow-sm rounded">
+                <i class="bi bi-clock"></i>
+                <h3 class="mt-2">Horário</h3>
+                <p>Seg a Sex — 09h às 18h<br>Sáb — 09h às 13h</p>
+              </div>
             </div>
-            <!-- QUADRADO 4 -->
+
+            <!-- Sobre o Site -->
             <div class="col-md-6">
-              INFO 4
+              <div class="info-item p-3 text-center shadow-sm rounded">
+                <i class="bi bi-info-circle"></i>
+                <h3>Sobre</h3>
+                <p> Este site incentiva uma rotina de skincare saudável.
+                  Entre em contato conosco e faça uma avaliação personalizada para descobrir a rotina ideal para sua
+                  pele.</p>
+              </div>
             </div>
+
 
           </div>
         </div>
 
-        <!--formulario direito  -->
-        <div class="col-lg-6">
-          <form action="https://formspree.io/f/xkgdzbwq" method="post" class="form-contato">
 
+
+        <!--formulario direito  -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <form action="https://formspree.io/f/xkgdzbwq" method="post" class="form-contato w-100"
+            style="max-width: 450px;">
             <div class="row gy-4">
 
               <!-- CAMPO NOME -->
-              <div class="col-md-6">
-                <label for="nome">Nome Completa*</label>
-                <input type="text" name="nome" id="nome" required>
+              <div class="col-12">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
               </div>
 
               <!-- CAMPO EMAIL -->
-              <div class="col-md-6">
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" required>
-              </div>
-
-              <!-- CAMPO TELEFONE/ WHATSAPP  -->
-              <div class="col-md-6">
-                <label for="tel">WhatsApp*</label>
-                <input type="tel" name="telefone" id="telefone" required>
-              </div>
-
-             <!-- CAMPO ASSUNTO -->
-              <div class="col-md-6">
-                <label for="assunto">Assunto*</label>
-                <input type="text" name="assunto" id="assunto" required>
-              </div>
-             <!-- CAMPO DE MENSAGEM -->
               <div class="col-12">
-                <textarea name="mensagem" id="mensagem" rows="6" required></textarea>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com"
+                    required>
+                </div>
+              </div>
 
+              <!-- CAMPO TELEFONE/ WHATSAPP -->
+              <div class="col-12">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(00) 00000-0000"
+                    required>
+                </div>
+              </div>
+
+              <!-- CAMPO ASSUNTO -->
+              <div class="col-12">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-text"><i class="fas fa-tag"></i></span>
+                  <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Motivo do contato"
+                    required>
+                </div>
+              </div>
+
+              <!-- CAMPO DE MENSAGEM -->
+              <div class="col-12">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                  <textarea class="form-control" name="mensagem" id="mensagem" rows="6"
+                    placeholder="Descreva sua pele ou dúvidas sobre skincare..." required></textarea>
+                </div>
               </div>
 
               <!-- BOTÃO ENVIAR -->
               <div class="col-12 text-center">
-                <button type="submit">
+                <button type="submit" class="btn btn-primary btn-lg px-5">
                   Enviar
                 </button>
               </div>
 
-
             </div>
-
           </form>
-
         </div>
+
+
 
       </div>
 
@@ -837,58 +868,58 @@
       target: '#navbarNav',
     });
 
-      // Máscara do telefone
+    // Máscara do telefone
     const telefoneInput = document.getElementById("telefone");
 
     if (telefoneInput) {
-        telefoneInput.addEventListener("input", (e) => {
-            let input = e.target.value.replace(/\D/g, "");
-            if (input.length > 11) input = input.slice(0, 11);
+      telefoneInput.addEventListener("input", (e) => {
+        let input = e.target.value.replace(/\D/g, "");
+        if (input.length > 11) input = input.slice(0, 11);
 
-            let formatted = "";
-            if (input.length > 0) formatted += "(" + input.slice(0, 2);
-            if (input.length >= 3) formatted += ") " + input.slice(2, 7);
-            if (input.length >= 8) formatted += "-" + input.slice(7, 11);
+        let formatted = "";
+        if (input.length > 0) formatted += "(" + input.slice(0, 2);
+        if (input.length >= 3) formatted += ") " + input.slice(2, 7);
+        if (input.length >= 8) formatted += "-" + input.slice(7, 11);
 
-            e.target.value = formatted;
-        });
+        e.target.value = formatted;
+      });
     }
 
     // Validação e envio do formulário com limpeza
     const form = document.querySelector(".form-contato");
 
     if (form) {
-        form.addEventListener("submit", async function (event) {
-            event.preventDefault(); // Impede a atualização da página
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Impede a atualização da página
 
-            const telefoneValor = telefoneInput?.value.replace(/\D/g, "");
-            if (!telefoneValor || telefoneValor.length !== 11) {
-                alert("Por favor, insira um telefone válido com 11 dígitos.");
-                telefoneInput?.focus();
-                return;
-            }
+        const telefoneValor = telefoneInput?.value.replace(/\D/g, "");
+        if (!telefoneValor || telefoneValor.length !== 11) {
+          alert("Por favor, insira um telefone válido com 11 dígitos.");
+          telefoneInput?.focus();
+          return;
+        }
 
-            const formData = new FormData(form);
-            const action = form.getAttribute("action");
+        const formData = new FormData(form);
+        const action = form.getAttribute("action");
 
-            try {
-                const response = await fetch(action, {
-                    method: "POST",
-                    body: formData,
-                    headers: { "Accept": "application/json" }
-                });
+        try {
+          const response = await fetch(action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
 
-                if (response.ok) {
-                    alert("Mensagem enviada com sucesso!");
-                    form.reset();
-                } else {
-                    alert("Erro ao enviar a mensagem. Tente novamente.");
-                }
+          if (response.ok) {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+          } else {
+            alert("Erro ao enviar a mensagem. Tente novamente.");
+          }
 
-            } catch (error) {
-                alert("Erro de conexão. Verifique sua internet.");
-            }
-        });
+        } catch (error) {
+          alert("Erro de conexão. Verifique sua internet.");
+        }
+      });
     }
 
 
