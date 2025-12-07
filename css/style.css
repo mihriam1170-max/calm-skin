@@ -1,14 +1,14 @@
 
 
 /* menu */
-.nav-link{
-  color: rgb(97, 150, 215);
+.nav-link {
+  color: #4ca1af; /* azul turquesa principal */
+  transition: color 0.3s;
 }
 
-.nav-link:hover{
-  color: #0606e8;
+.nav-link:hover {
+  color: #128192; /* tom mais escuro de turquesa */
 }
-
 
 /* Hero */
 .hero {
@@ -87,7 +87,7 @@
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-prev:hover{
   opacity: 0.9;
-  color: rgb(85, 229, 229);
+  color: #4ca1af;
   transition: 0.35;
   border: none;
 }
