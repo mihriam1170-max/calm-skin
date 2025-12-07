@@ -12,17 +12,19 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
-  <!-- G LightBox-->
+  <!-- GLightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-  <!--AOS CSS-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 <body>
@@ -91,7 +93,8 @@
         <img src="img/hero/img.png" alt="" />
 
         <div class="carousel-container">
-          <h2>HIDRATAÇÃO</h2>
+          <h2 data-aos="fade-up">HIDRATAÇÃO</h2>
+
 
           <p>
             A hidratação é o segredo para uma pele saudável e luminosa. Quando
@@ -149,82 +152,86 @@
   <section class="sobre py-5 bg-light" id="sobre">
     <div class="container">
       <div class="row align-items-center">
+
         <!-- IMAGEM -->
-        <div class="col-lg-5 text-center mb-4 md-lg-0">
+        <div class="col-lg-5 text-center mb-4 mb-lg-0">
           <img src="img/sobre.png"
-            alt="Mulher aplicando creme facial com expressão calma, representando o autocuidado e a leveza da marca Calm Skin."
-            loading="lazy" class="img-fluid rounded-4 shadow" />
+            alt="Mulher aplicando creme facial com expressão calma, representando o autocuidado e leveza da marca Calm Skin."
+            loading="lazy" class="img-fluid rounded-4 shadow-sm sobre-img" />
         </div>
 
         <!-- TEXTO -->
         <div class="col-lg-7 coluna">
-          <h3 class="text-uppercase fw-bold text-primary mb-3">Sobre nós</h3>
+
+          <h3 class="titulo-sobre fw-bold text-primary mb-3">
+            Sobre nós
+          </h3>
+
+          <hr class="linha-detalhe mb-4">
 
           <p>
-            <strong>Calm Skin</strong> é uma plataforma dedicada a recomendar
-            produtos de skincare conforme o tipo de pele. Nosso propósito é
-            ajudar cada pessoa a encontrar itens realmente adequados para sua
-            pele, garantindo segurança, eficácia e uma rotina de cuidados
-            personalizada.
+            A <strong>Calm Skin</strong> nasceu com o propósito de tornar o autocuidado simples,
+            leve e acessível. O espaço oferece conteúdos claros e educativos para quem deseja
+            criar uma rotina de skincare prática, consciente e alinhada ao bem-estar diário.
           </p>
 
-          <p class="mb-4">
-            Acredita-se que cada pele é única. Por isso, a Calm Skin reúne
-            orientações, análises e sugestões pensadas para quem busca montar
-            uma rotina eficaz, leve e alinhada às necessidades reais da pele.
+          <p>
+            Acredita-se que cada pele carrega sua própria história, por isso as orientações compartilhadas
+            são pensadas para respeitar as singularidades de cada pessoa e incentivar escolhas saudáveis.
           </p>
 
-          <!-- LISTA DE DIFERENCIAIS -->
-          <ul class="list-unstyled mt-4">
+          <ul class="list-unstyled mt-4 sobre-lista">
             <li class="mb-2">
-              <i class="bi bi-droplet text-primary me-2" aria-hidden="true"></i>
-              Produtos recomendados de acordo com o tipo de pele
+              <i class="bi bi-droplet text-primary me-2"></i>
+              Dicas fáceis para cuidados diários
             </li>
             <li class="mb-2">
-              <i class="bi bi-flower1 text-primary me-2" aria-hidden="true"></i>
-              Conteúdos educativos sobre cuidados diários
+              <i class="bi bi-flower1 text-primary me-2"></i>
+              Conteúdos educativos sobre skincare
             </li>
             <li class="mb-2">
-              <i class="bi bi-heart text-primary me-2" aria-hidden="true"></i>
-              Foco em bem-estar, autocuidado e saúde da pele
+              <i class="bi bi-heart text-primary me-2"></i>
+              Incentivo ao autocuidado e bem-estar
             </li>
             <li>
-              <i class="bi bi-globe text-primary me-2" aria-hidden="true"></i>
-              Informações acessíveis e confiáveis
+              <i class="bi bi-globe text-primary me-2"></i>
+              Informações simples, claras e confiáveis
             </li>
           </ul>
+
         </div>
       </div>
     </div>
   </section>
 
+
   <!--estatisticas-->
   <section class="stats" id="stats"></section>
 
-  <!-- ROTINAS -->
-
+  <!-- Seção de Rotinas de Skincare com Modais Integrados - Calm Skin -->
   <section class="rotinas py-5" id="rotinas">
     <div class="container text-center">
-      <!-- Título -->
+
       <h2 class="badge rounded-pill text-bg-info">Rotinas de Skincare</h2>
 
       <div class="mb-4">
-        <span class="text-primary">Conheça os cuidados ideais para o seu tipo de pele</span>
+        <span class="text-primary">As rotinas apresentadas aqui servem apenas como orientação geral para incentivar
+          hábitos simples e saudáveis.</span>
       </div>
 
       <div class="row text-center g-4">
+
         <!-- Pele Oleosa -->
         <div class="col-lg-4 col-md-6 d-flex">
           <div class="card p-4 shadow-sm w-100">
             <i class="bi bi-droplet-half fs-1 text-info"></i>
             <h4>Pele Oleosa</h4>
             <p>
-              Rotina focada em controle de brilho, limpeza adequada e
-              equilíbrio da produção de óleo.
+              Para peles oleosas, uma rotina equilibrada ajuda a controlar o brilho sem ressecar.
+              O foco está em manter a pele limpa, fresca e protegida.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalOleosa">Saiba
+              Mais</button>
           </div>
         </div>
 
@@ -234,12 +241,11 @@
             <i class="bi bi-water fs-1 text-primary"></i>
             <h4>Pele Seca</h4>
             <p>
-              Cuidados voltados para hidratação profunda e proteção da
-              barreira cutânea.
+              A pele seca costuma pedir mais atenção à hidratação.
+              Uma rotina leve e constante ajuda a manter o conforto e reforçar a barreira natural da pele.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalSeca">Saiba
+              Mais</button>
           </div>
         </div>
 
@@ -249,12 +255,10 @@
             <i class="bi bi-stars fs-1 text-warning"></i>
             <h4>Pele Sensível</h4>
             <p>
-              Rotina delicada com foco em reduzir irritações e fortalecer a
-              pele.
+              Rotina delicada com foco em reduzir irritações e fortalecer a barreira cutânea.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalSensivel">Saiba
+              Mais</button>
           </div>
         </div>
 
@@ -264,12 +268,11 @@
             <i class="bi bi-layers fs-1 text-success"></i>
             <h4>Pele Mista</h4>
             <p>
-              Combina cuidados para áreas oleosas e regiões naturalmente secas
-              do rosto.
+              Quem tem pele mista pode equilibrar áreas oleosas e secas com cuidados simples.
+              A intenção é manter a pele uniforme e saudável.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalMista">Saiba
+              Mais</button>
           </div>
         </div>
 
@@ -279,12 +282,11 @@
             <i class="bi bi-emoji-angry fs-1 text-danger"></i>
             <h4>Pele Acneica</h4>
             <p>
-              Rotina voltada para prevenção de inflamações e cuidado da
-              barreira cutânea.
+              Rotina voltada para controle da oleosidade e prevenção de inflamações, mantendo a pele limpa e
+              equilibrada.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAcneica">Saiba
+              Mais</button>
           </div>
         </div>
 
@@ -294,17 +296,191 @@
             <i class="bi bi-emoji-smile fs-1 text-secondary"></i>
             <h4>Pele Normal</h4>
             <p>
-              Cuidados equilibrados para manter a saúde e luminosidade natural
-              da pele.
+              Rotina equilibrada para manter hidratação natural, viço e saúde da pele no dia a dia.
             </p>
-            <a href="#contato" class="stretched-link">
-              <span class="btn btn-outline-primary">Ver rotina</span>
-            </a>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalNormal">Saiba
+              Mais</button>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ========================= -->
+  <!--           MODAIS          -->
+  <!-- ========================= -->
+
+  <!-- Modal Pele Oleosa -->
+  <div class="modal fade" id="modalOleosa" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Oleosa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Gel de limpeza</li>
+          <li>Hidratante leve</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Gel de limpeza</li>
+          <li>Hidratante equilibrante</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Pele Seca -->
+  <div class="modal fade" id="modalSeca" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Seca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante nutritivo</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante intenso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Pele Mista -->
+  <div class="modal fade" id="modalMista" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Mista</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Limpeza leve</li>
+          <li>Hidratante equilibrante</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante leve</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Pele Sensível -->
+  <div class="modal fade" id="modalSensivel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Sensível</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Gel de limpeza suave</li>
+          <li>Hidratante calmante</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante restaurador</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Pele Acneica -->
+  <div class="modal fade" id="modalAcneica" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Acneica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Gel de limpeza antioleosidade</li>
+          <li>Hidratante leve</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Limpeza profunda</li>
+          <li>Hidratante equilibrante</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal Pele Normal -->
+  <div class="modal fade" id="modalNormal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"">
+    <div class=" modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title">Rotina para Pele Normal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <strong>Manhã:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante leve</li>
+          <li>Protetor solar</li>
+        </ul>
+        <strong>Noite:</strong>
+        <ul>
+          <li>Limpeza suave</li>
+          <li>Hidratante nutritivo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- === Inclua este script apenas ONCE, logo antes do fechamento do body === -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
 
   <!-- ESTATÍSTICAS -->
   <div class="container py-5">
@@ -498,7 +674,7 @@
 
               <div class="portfolio-info">
                 <!-- link foto-->
-                <a href="mg/Portfolio/foto12.jpg" class="glightbox preview-link">
+                <a href="img/Portfolio/foto12.jpg" class="glightbox preview-link">
                   <i class="bi bi-zoom-in"></i>
                 </a>
               </div>
@@ -816,6 +992,8 @@
       });
     }
   </script>
+
+
 </body>
 
 </html>
