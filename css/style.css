@@ -10,6 +10,21 @@
   color: #128192; /* tom mais escuro de turquesa */
 }
 
+.titulo-sobre {
+  color: #5A8FBA; /* Azul serenity */
+  font-weight: 700;
+}
+.sobre-icon {
+  color: #5A8FBA; /* mesma cor do título */
+}
+
+.stats-item i {
+  color: #5A8FBA; /* cor dos ícones */
+  font-size: 25px; /* opcional: deixa os ícones mais bonitos */
+}
+
+
+
 /* Hero */
 .hero {
   padding: 0;
