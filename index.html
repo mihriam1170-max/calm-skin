@@ -30,41 +30,50 @@
 <body>
   <header id="header" class="header fixed-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <!--marcas-->
-        <a class="navbar-brand" href="#">Calm Skin</a>
+  <div class="container">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- LOGO + TEXTO DO SITE -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.png/logo.png" alt="Calm Skin" height="45" class="me-2">
+      <span class="fw-bold">Calm Skin</span>
+    </a>
 
-        <!--Botoes do Menu-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+    <!-- BOTÃO MOBILE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#rotinas">Rotinas</a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#dicas">Dicas</a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <li class="nav-item">
+          <a class="nav-link" href="#rotinas">Rotinas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#dicas">Dicas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
   </header>
 
   <!--HERO-->
@@ -155,7 +164,7 @@
 
         <!-- IMAGEM -->
         <div class="col-lg-5 text-center mb-4 mb-lg-0">
-          <img src="img/sobre-img/img.png.png"
+          <img src="img/sobre-img/img.png"
             alt="Mulher aplicando creme facial com expressão calma, representando o autocuidado e leveza da marca Calm Skin."
             loading="lazy" class="img-fluid rounded-4 shadow-sm sobre-img" />
         </div>
@@ -961,6 +970,32 @@
       });
     }
   </script>
+  <footer class="footer bg-light text-center py-4 mt-5">
+    <div class="container">
+
+      <!-- Logo -->
+      <img src="img/logo.png/logo.png" alt="Logo Calm Skin" style="width:120px; margin-bottom: 10px;">
+
+      <!-- Redes Sociais -->
+      <div class="social-links mt-3">
+        <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="mx-2"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="mx-2"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+
+      <!-- Frase curta -->
+      <p class="mt-3" style="color:#333;">
+        Cuidar da pele é um ato de amor próprio.
+      </p>
+
+      <!-- Direitos -->
+      <p class="text-muted mb-0">© 2025 Calm Skin. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+
+
 
 </body>
 

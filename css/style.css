@@ -60,14 +60,14 @@
 
 .hero h2 {
   margin-bottom: 3rem;
-  color: #fcfafa;
+  color: #faf1f1;
   font-size: 3rem;
   font-weight: 700;
   animation: fadeInDown 1s both;
 }
 
 .hero p {
-  color: #e2e2e2;
+  color: #f4f9f8;
   max-width: 60%;
 }
 /* Icones setas Trocam slides */
@@ -335,6 +335,20 @@ background-color: #121313;
 }
 .portfolio-content img{
   transition: 0.3s;
+}
+
+footer {
+  background-color: #f7fafa;
+}
+
+footer .social-links a {
+  font-size: 1.4rem;
+  color: #6cb3b9;
+  transition: 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #4aa7b0;
 }
 
 
